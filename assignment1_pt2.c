@@ -3,9 +3,9 @@
 int main(void){
     char string[100];
     int alphabetCount, digitCount, spacesCount, otherCharsCount, i, ascii;
-    i = 0;
+    i = alphabetCount = digitCount = spacesCount = otherCharsCount = 0;
     scanf("%s", string);
-    while(string[i] != NULL){
+    while(string[i] != '\0'){
         ascii = string[i];
         if((64<ascii && ascii<91) || (96<ascii && ascii<123)){
             alphabetCount++;
@@ -21,6 +21,7 @@ int main(void){
 
         }
         i++;
+        printf("%i\n", i);
     }
     printf("%i %i %i %i", alphabetCount, digitCount, spacesCount, otherCharsCount);
 }
