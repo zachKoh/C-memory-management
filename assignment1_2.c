@@ -5,7 +5,7 @@ int main(void){
     int alphabetCount, digitCount, spacesCount, otherCharsCount, i, ascii;
     i = alphabetCount = digitCount = spacesCount = otherCharsCount = 0;
     scanf("%s", string);
-    while(string[i] != '\0'){
+    while(string[i] != '\0' || string[i] == ' '){
         ascii = string[i];
         if((64<ascii && ascii<91) || (96<ascii && ascii<123)){
             alphabetCount++;
