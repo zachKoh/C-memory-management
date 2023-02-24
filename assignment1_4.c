@@ -1,14 +1,13 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(void){
-    double a, b;
+    double a, b, temp3;
     int temp, temp2;
     double n;
-    scanf("%lf %lf", &a, &b);
-    printf("%lf\n", a);
-    printf("%lf\n", b);
-    temp = (a/b)*1000000;
+    scanf("%lf %lf %lf", &a, &b, &n);
+    temp = (a/b) * pow(10,n);
     temp2 = temp%10;
     n = a/b;
-    printf("%i\n%i\n", temp, temp2);
+    printf("%i\n", temp2);
 }       
