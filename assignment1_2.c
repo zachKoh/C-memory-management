@@ -27,4 +27,6 @@ int main(void){
         i++;
     }
     printf("%i %i %i %i", alphabetCount, digitCount, spacesCount, otherCharsCount);
+
+    return 0;
 }

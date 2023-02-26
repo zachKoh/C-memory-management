@@ -5,4 +5,5 @@ int main(void){
     scanf("%i\n", &a);
     scanf("%i\n", &b);
 
+    return 0;
 }

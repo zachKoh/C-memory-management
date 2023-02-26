@@ -11,4 +11,6 @@ int main(void){
         r1++;
     }
     printf("%.3f\n%.3f", area, circumference);
+
+    return 0;
 }
